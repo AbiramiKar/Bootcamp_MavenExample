@@ -1,0 +1,26 @@
+<suite name="Suite">
+	<parameter name="user_name" value="tomsmith" />
+	<parameter name="pass_word" value="SuperSecretPassword!" />
+    <test name="Testgroups">
+    <groups>
+    <define name="all">
+    <include name="featureOne"/>
+    <include name="featureTwo"/>
+    </define>
+    <run>
+	<!-- <include name="all"/>
+	<include name="featureOne"/> 
+	<exclude name="featureTwo"/>
+    <include name="regression"/>  -->
+   
+    </run>
+    </groups>
+         <classes>
+              <class name="testngTestCases.GooglePageTest"/>
+          <!--    <class name="testngTestCases.DemoPageTest"/> 
+             
+             <class name="testngTestCases.DataParam"/> -->
+            
+          </classes>
+     </test>
+</suite> 
